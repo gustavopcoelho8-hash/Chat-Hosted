@@ -3,7 +3,23 @@ import { LLM } from "@/types"
 const GOOGLE_PLATORM_LINK = "https://ai.google.dev/"
 
 // Google Models (UPDATED 12/22/23) -----------------------------
+const Gemini2_5Pro: LLM = {
+  modelId: "gemini-2.5-pro",
+  modelName: "Gemini 2.5 Pro",
+  provider: "google",
+  hostedId: "gemini-2.5-pro",
+  platformLink: "https://cloud.google.com/vertex-ai/generative-ai/docs/models",
+  imageInput: true // if supported, maybe multimodal
+}
 
+const Gemini2_5Flash: LLM = {
+  modelId: "gemini-2.5-flash",
+  modelName: "Gemini 2.5 Flash",
+  provider: "google",
+  hostedId: "gemini-2.5-flash",
+  platformLink: "https://cloud.google.com/vertex-ai/generative-ai/docs/models",
+  imageInput: true
+}
 // Gemini 1.5 Flash
 const GEMINI_1_5_FLASH: LLM = {
   modelId: "gemini-1.5-flash",
@@ -48,5 +64,7 @@ export const GOOGLE_LLM_LIST: LLM[] = [
   GEMINI_PRO,
   GEMINI_PRO_VISION,
   GEMINI_1_5_PRO,
-  GEMINI_1_5_FLASH
+  GEMINI_1_5_FLASH,
+  Gemini2_5Pro,
+  Gemini2_5Flash
 ]
