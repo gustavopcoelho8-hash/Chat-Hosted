@@ -93,8 +93,9 @@ export default function WorkspaceLayout({ children }: WorkspaceLayoutProps) {
 
     const workspace = await getWorkspaceById(workspaceId)
     setSelectedWorkspace(workspace)
-
-    const assistantData = await getAssistantWorkspacesByWorkspaceId(workspaceId)
+    const assistantData = (await getAssistantWorkspacesByWorkspaceId(
+      workspaceId
+    )) as any
     setAssistants(assistantData.assistants)
 
     for (const assistant of assistantData.assistants) {
