@@ -20,15 +20,6 @@ const Gemini2_5Flash: LLM = {
   platformLink: "https://cloud.google.com/vertex-ai/generative-ai/docs/models",
   imageInput: true
 }
-// Gemini 1.5 Flash
-const GEMINI_1_5_FLASH: LLM = {
-  modelId: "gemini-1.5-flash",
-  modelName: "Gemini 1.5 Flash",
-  provider: "google",
-  hostedId: "gemini-1.5-flash",
-  platformLink: GOOGLE_PLATORM_LINK,
-  imageInput: true
-}
 
 // Gemini 1.5 Pro (UPDATED 05/28/24)
 const GEMINI_1_5_PRO: LLM = {
@@ -64,7 +55,6 @@ export const GOOGLE_LLM_LIST: LLM[] = [
   GEMINI_PRO,
   GEMINI_PRO_VISION,
   GEMINI_1_5_PRO,
-  GEMINI_1_5_FLASH,
   Gemini2_5Pro,
   Gemini2_5Flash
 ]
